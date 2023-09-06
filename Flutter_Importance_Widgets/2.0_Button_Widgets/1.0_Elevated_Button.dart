@@ -6,6 +6,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  bool isHover=false;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(debugShowCheckedModeBanner: false, home: HomePage());
@@ -30,19 +31,27 @@ class HomePage extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   ElevatedButton(
-                    onPressed: null,
+                    onPressed:(){},
                     child: Text('Disable'),
                   ),
                   SizedBox(height: 15),
                   ElevatedButton(onPressed: () {}, child: Text('Enabled')),
                   SizedBox(height: 15),
                   ElevatedButton.icon(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.pink,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(18)),
+                        textStyle: TextStyle(
+                            fontSize: 25, fontWeight: FontWeight.w600),
+                        elevation:12,
+                        enabledMouseCursor:MouseCursor.uncontrolled,
+                      ),
                       onPressed: () {},
-                      icon: Icon(Icons.message),
+                      icon: Icon(Icons.message,color: Colors.black,),
                       label: Text('Enabled'))
                 ],
               ),
             )));
   }
 }
-
