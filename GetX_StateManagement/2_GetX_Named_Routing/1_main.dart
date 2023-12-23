@@ -1,34 +1,27 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:google_map/ProductPage.dart';
 
+import 'HomePage.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+void main(){runApp(MyApp());}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.amber,
-          title: Text("Home Page"),
-        ),
-        body: Center(
-            child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("You are now stay Home Page"),
-            ElevatedButton(
-              onPressed: () {
-                //Get.toNamed("/product");
-                //Get.offNamed('/product');
-                Get.offAllNamed('/product');
-
-              },
-              child: Text("Button-1"),
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
-            ),
-          ],
-        )));
+    return GetMaterialApp(
+      initialRoute: '/',
+      //home: HomePage(),
+      getPages: [
+         GetPage(name: '/', page: () => HomePage(),transition: Transition.zoom),
+         GetPage(name: '/product', page: () => ProductPage(),transition: Transition.zoom),
+      ],
+    );
   }
 }
+
+
