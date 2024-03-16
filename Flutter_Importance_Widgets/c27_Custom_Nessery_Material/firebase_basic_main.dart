@@ -1,3 +1,6 @@
+// must importance to import dart.io
+import 'dart:io';
+
 Future main() async{
   WidgetsFlutterBinding.ensureInitialized();
   Platform.isAndroid? await Firebase.initializeApp(
